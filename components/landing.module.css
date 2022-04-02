@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+.landing_main_img {
+  width: 100%;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../public/img1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 17%;
+}
+
+@media only screen and (max-width: 600px) {
+  .landing_main_img {
+    padding-top: 30%;
+  }
+}
+
+.main_button {
+  background-color: #46bdcb;
+  color: white;
+  border: 1px solid rgb(96, 218, 223);
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 5px;
+  transform: translateY(0px);
+  text-decoration: none;
+}
+
+.main_button:hover {
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-family: "Fugaz One", cursive;
+  background: linear-gradient(
+    310deg,
+    rgb(45 45 45) 0%,
+    rgba(237, 35, 48, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.para_div {
+  width: 60%;
+  text-align: center;
+  /* margin: auto; */
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.sec_2 {
+  background-color: bisque;
+}
+
+.cards {
+  /* display: flex; */
+  background-color: rgb(160, 99, 25);
+  padding-top: 50px;
+}
+
+.mob {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../public/elMob1.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.str {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../public/energyStorage.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.infra {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+    url("../public/elMob3.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.grey_text {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course_col {
+  flex-basis: 48%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.course_col h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course_col:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.trans {
+  transition: all 1s;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #000000b2;
+  position: absolute;
+}
+
+.carousel_content {
+  position: absolute;
+}
+
+.carousel_content h5 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.carousel_item,
+.carousel_item img {
+  height: 300px;
+}
+
+.carousel_ind_btn {
+  margin: 5px;
+  border: none;
+  outline: none;
+}
+
+.carousel_ind_btn:focus {
+  outline: none;
+}
+
+.card_btn {
+  text-decoration: none;
+  color: white;
+  padding: 7px 20px;
+  background-color: #39bdcb;
+  border-radius: 5px;
+  transition: 0.3s all;
+}
+
+.card_btn:hover {
+  color: white;
+  background-color: #1d8e9b;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.coming_soon {
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.coming_soon:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.cta {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../public/contact_us.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: white;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media (max-width: 700px) {
+  .cta h1 {
+    font-size: 24px;
+  }
+}
+
+.sub_header {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../public/battery_landing.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.sub_header h1 {
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.cust_row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col_min_rev {
+  flex-direction: row;
+}
+
+@media (max-width: 700px) {
+  .cust_row {
+    flex-direction: column;
+  }
+
+  .col_min_rev {
+    flex-direction: column-reverse;
+  }
+
+  .campus-col {
+    height: 15rem;
+  }
+}

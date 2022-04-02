@@ -1,0 +1,23 @@
+.landing_main_img {
+    width: 100%;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0,0.3), rgb(0,0,0,0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.main_button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(96, 218, 223);
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.main_button:hover {
+    background-color: teal;
+    border: 1px solid teal;
+}
