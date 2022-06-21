@@ -53,9 +53,9 @@ const footer = () => {
         <div className="footer-company-about">
           <span>About us</span>
           <p style={{ color: "white" }}>
-            New Volta is a subsidiary of a parent firm Nath Engineering Works.
-            At New Volta, we believe that sustainable energy storage can solve
-            major energy and climate issues which the world is facing right now.
+            Exergi is a subsidiary of a parent firm Nath Engineering Works. At
+            Exergi, we believe that sustainable energy storage can solve major
+            energy and climate issues which the world is facing right now.
             <br />
             We are a technology agnostic company when it comes to finding best
             solutions for energy storage. We are laser focused on tackling the

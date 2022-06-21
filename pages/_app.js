@@ -21,6 +21,7 @@ function MyApp({ Component, pageProps, router }) {
           crossOrigin="anonymous"
         ></script>
         <link rel="icon" href="/fav.png" />
+        <title>Exergi</title>
       </Head>
       <Header page={router.route} />
       <motion.div
