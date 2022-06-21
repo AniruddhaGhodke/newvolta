@@ -1,27 +1,64 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./landing.module.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Modal, Button } from "react-bootstrap";
+
+function MyVerticallyCenteredModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          Modal heading
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <h4>Centered Modal</h4>
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={props.onHide}>Close</Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
 
 const Landing = () => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
+  const [modalShow, setModalShow] = useState(true);
+
   return (
     <React.Fragment>
       <style jsx>{`
-          .card-body {
-            box-shadow: 3px 4px 11px -2px rgba(0, 0, 0, 0.75);
-          }
+        .card-body {
+          box-shadow: 3px 4px 11px -2px rgba(0, 0, 0, 0.75);
+        }
       `}</style>
+
+      {/* <MyVerticallyCenteredModal
+        show={modalShow}
+        onHide={() => setModalShow(false)}
+      /> */}
+
       <section
         data-aos="fade"
         data-aos-duration="500"
         className={`container-fluid  ${styles.landing_main_img}`}
       >
         <div className="container text-start">
-          <h2 className={styles.heading}>New Volta Battery</h2>
+          <h2 className={styles.heading}>EXERGI</h2>
           <div className={`${styles.para_div} text-start`}>
             <h3>Transforming Energy Storage</h3>
           </div>
@@ -51,7 +88,7 @@ const Landing = () => {
                     className="carousel slide"
                     data-bs-ride="carousel"
                   >
-                    <div class="carousel-indicators">
+                    <div className="carousel-indicators">
                       <button
                         type="button"
                         data-bs-target="#carouselExampleCaptions"
@@ -178,7 +215,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <section data-aos="fade-in" className={styles.course} id="about-us">
+      <section className={styles.course} id="about-us">
         <h1>About Us</h1>
         <p
           className={styles.grey_text}
@@ -223,7 +260,7 @@ const Landing = () => {
         </div>
       </section>
 
-      <section data-aos="fade-up" className={styles.cta}>
+      <section className={styles.cta}>
         <h1>Let's Get In Touch</h1>
         <a href="/contact" className={styles.main_button}>
           CONTACT US

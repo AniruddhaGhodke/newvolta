@@ -18,7 +18,7 @@ const footer = () => {
   return (
     <footer className="footer-distributed">
       <div className="footer-left">
-        <img src="/nvb.png" />
+        <img src="/logo3.PNG" />
 
         <p className="footer-links">
           <a href="#">Home</a>|<a href="#">Blog</a>|<a href="#">About</a>|

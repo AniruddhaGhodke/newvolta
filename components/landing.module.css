@@ -42,10 +42,11 @@
   background: linear-gradient(
     310deg,
     rgb(45 45 45) 0%,
-    rgba(237, 35, 48, 1) 100%
+    rgb(1 171 79) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
 }
 
 .para_div {

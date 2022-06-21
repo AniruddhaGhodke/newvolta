@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps, router }) {
           integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
           crossOrigin="anonymous"
         ></script>
+        <link rel="icon" href="/fav.png" />
       </Head>
       <Header page={router.route} />
       <motion.div

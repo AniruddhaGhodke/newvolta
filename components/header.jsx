@@ -16,7 +16,7 @@ function header({ page }) {
 
           .navbar-light .navbar-nav .nav-link.active:after {
             content: " ";
-            border: 2px solid #a92228;
+            border: 2px solid #006c31;
             margin: auto;
             border-radius: 10px;
             opacity: 1;
@@ -28,7 +28,7 @@ function header({ page }) {
           .navbar-light .navbar-nav .nav-link:after {
             content: " ";
             width: 0%;
-            border: 2px solid #a92228;
+            border: 2px solid #006c31;
             margin: auto;
             border-radius: 10px;
             opacity: 0;
@@ -52,7 +52,7 @@ function header({ page }) {
       >
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src="./logo2.png" alt="logo" height="50" />
+            <img src="./logo3.PNG" alt="logo" height="50" />
           </a>
           <button
             className="navbar-toggler"
