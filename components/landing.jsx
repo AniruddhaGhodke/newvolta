@@ -1,36 +1,7 @@
-import React, { useEffect, useState } from "react";
-import styles from "./landing.module.css";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { Modal, Button } from "react-bootstrap";
-
-function MyVerticallyCenteredModal(props) {
-  return (
-    <Modal
-      {...props}
-      size="lg"
-      aria-labelledby="contained-modal-title-vcenter"
-      centered
-    >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
-          Modal heading
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body>
-        <h4>Centered Modal</h4>
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-          consectetur ac, vestibulum at eros.
-        </p>
-      </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
-    </Modal>
-  );
-}
+import React, { useEffect, useState } from 'react';
+import styles from './landing.module.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Landing = () => {
   useEffect(() => {
@@ -46,11 +17,6 @@ const Landing = () => {
           box-shadow: 3px 4px 11px -2px rgba(0, 0, 0, 0.75);
         }
       `}</style>
-
-      {/* <MyVerticallyCenteredModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      /> */}
 
       <section
         data-aos="fade"
@@ -71,7 +37,7 @@ const Landing = () => {
       <section
         id="catDiv"
         className={`container-fluid`}
-        style={{ paddingTop: "90px" }}
+        style={{ paddingTop: '90px' }}
       >
         <div className="container">
           <h1 className="text-center mb-4">Categories</h1>
@@ -79,9 +45,9 @@ const Landing = () => {
             <div
               data-aos="fade-in"
               className={`col-lg-4`}
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: '10px' }}
             >
-              <div className="card" style={{ height: "300px", border: "none" }}>
+              <div className="card" style={{ height: '300px', border: 'none' }}>
                 <div className="card-body p-0">
                   <div
                     id="carouselExampleCaptions"
@@ -178,7 +144,7 @@ const Landing = () => {
             <div
               data-aos="fade-in"
               className={`col-lg-4`}
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: '10px' }}
             >
               <div className={`card ${styles.sec_2_card} ${styles.str}`}>
                 <div className="card-body text-white">
@@ -196,7 +162,7 @@ const Landing = () => {
             <div
               data-aos="fade-in"
               className={`col-lg-4`}
-              style={{ marginBottom: "10px" }}
+              style={{ marginBottom: '10px' }}
             >
               <div className={`card ${styles.sec_2_card} ${styles.infra}`}>
                 <div className="card-body text-white">
@@ -219,7 +185,7 @@ const Landing = () => {
         <h1>About Us</h1>
         <p
           className={styles.grey_text}
-          style={{ fontSize: "17px", textAlign: "justify" }}
+          style={{ fontSize: '17px', textAlign: 'justify' }}
         >
           Exergi is a subsidiary of a parent firm Nath Engineering Works. At
           Exergi, we believe that sustainable energy storage can solve major
@@ -237,7 +203,7 @@ const Landing = () => {
         <div data-aos="flip-up" className={styles.row}>
           <div className={styles.course_col}>
             <h3>Vision</h3>
-            <p className={styles.grey_text} style={{ fontSize: "18px" }}>
+            <p className={styles.grey_text} style={{ fontSize: '18px' }}>
               To be recognized as global leader in carbon reduction technologies
               by the end of this decade.
             </p>
@@ -245,7 +211,7 @@ const Landing = () => {
 
           <div data-aos="flip-down" className={styles.course_col}>
             <h3>Mission</h3>
-            <p className={styles.grey_text} style={{ fontSize: "17px" }}>
+            <p className={styles.grey_text} style={{ fontSize: '17px' }}>
               To fulfill the expectations of customers with greater efficiency
               and more starkness in our services.
               <br />
